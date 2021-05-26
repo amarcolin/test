@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lease you pad</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="mainHeader">
+        <h1>Lease you pad</h1>
+        <p>Turn, your home, trailer, tent or igloo into some fast cash! When you're not there let someone else be.</p>
+    </header>
+    <main>
+        <header class="second">
+            <h2>Stay here</h2>
+            <div id="wrap">
+            <img src="images/home.jpg" alt="home">
+            <p>The premise is simple, you have extra space - we connect you with someone who wants to stay there.</p>
+            </div>
+        </header>
+    
+        
+        <section class="listingSection">
+            <h2>Current Listings</h2>
+        <div class="listing">
+            <div class="item">
+                <figure>
+                    <img src="images/vw.jpg" alt="vw">
+                <figcaption>
+                    <img src="images/iconTrailer.svg" alt="trailer icon">
+                        WB Bus
+                    </figcaption>
+                </figure>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing. <a href="#">more></a></p>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="images/airstream.jpg" alt="airstream">
+                    <figcaption>
+                        <img src="images/iconTrailer.svg" alt="trailer icon">
+                        Airstream
+                    </figcaption>
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing. <a href="#">more></a></p>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="images/home3.jpg" alt="home">
+                    <figcaption>
+                        <img src="images/iconHome.svg" alt="icon home">
+                        House
+                    </figcaption>
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing. <a href="#">more></a></p>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="images/teepee.jpg" alt="teepee">
+                    <figcaption>
+                        <img src="images/iconTeepee.svg" alt="teepee icon">
+                        Teepees
+                    </figcaption>
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing. <a href="#">more></a></p>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="images/treehouse.jpg" alt="Tree House">
+                    <figcaption>
+                        <img src="images/iconHome.svg" alt="icon home">
+                        Treehouse
+                    </figcaption>
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing. <a href="#">more></a></p>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="images/home2.jpg" alt="">
+                    <figcaption>
+                        <img src="images/iconHome.svg" alt="icon home">
+                        Jungle House
+                    </figcaption>
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing. <a href="#">more></a></p>
+            </div>
+        </div>
+        </section>
+        <section class="form">
+            <h2>Need more information?</h2>
+            <p>Thanks for stopping by, if you have questions, please get in touch with us:</p>
+            
+            <form action="#" method="POST" id="contactForm" enctype="text/plain">
+                <div class="wrap">
+                <fieldset>
+                    <legend class="basics">The basics</legend>
+                    <ul id="basics">
+                        <li>
+                            <label for="fName">Your name:</label>
+                            <input type="text" id="fName" name="first_name" required>
+                        </li>
+                        <li>
+                            <label for="email">Your email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </li>
+                        <li>
+                            <label for="phone">Your telephone number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </li>
+                        <li>
+                            <label for="message">Your question or message:</label>
+                            <textarea name="message" id="message"></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="rent">
+                    <legend>Ready to rent</legend>
+                   
+                        <div class="location">
+                            <p>Let us know a little bit about your pad.</p>
+                            <h2>Location:</h2>
+                            <ul>
+                                <li>
+                                    <label for="address">Address</label>
+                                    <input type="text" id="address" name="address" required>
+                                </li>
+                                <li>
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="city" required>
+                                </li>
+                                <li>
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" required>
+                                </li>
+                                <li>
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip">
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="padLike">
+                            <h2>What is your pad like?</h2>
+                            <h3>Pad type</h3>
+                            <ul class="checkBox">
+                                <li>
+                                    <input type="checkbox" name="padType" id="home" value="home">
+                                    <label for="home">Home</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="padType" id="igloo" value="igloo">
+                                    <label for="igloo">Igloo</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="padType" id="treehouse" value="treehose">
+                                    <label for="treehouse">Treehouse</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="padType" id="teepee" value="teepee">
+                                    <label for="teepee">Teepee</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="padType" id="trailer" value="trailer">
+                                    <label for="trailer">Trailer</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="padType" id="van" value="van">
+                                    <label for="van">Van</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="padType" id="other" value="other">
+                                    <label for="other">Other</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="wrapRoomAmenities">
+                            <div class="margin">
+                                <div class="roomType">
+                                    <h3>Room Type</h3>
+                                    <select name="room" id="room">                                        
+                                        <option value="entireHomeApt">Entire home/apt</option>
+                                        <option value="entireHomeApt">Entire home/apt</option>
+                                    </select>
+                                </div>
+                                <div class="bedrooms">
+                                    <h3>Bedrooms</h3>
+                                    <select name="bedrooms" id="bedrooms">
+                                        <option value="1">1 Bedroom</option>
+                                        <option value="2">2 Bedrooms</option>
+                                        <option value="3">3 Bedrooms</option>
+                                        <option value="4">4 Bedrooms</option>
+                                        <option value="5">5 Bedrooms</option>
+                                    </select>
+                                </div>
+                                <div class="bathrooms">
+                                    <h3>Bathrooms</h3>
+                                    <select name="bedrooms" id="bathrooms">
+                                        <option value="1">1 Bathtoom</option>
+                                        <option value="2">2 Bathtooms</option>
+                                        <option value="3">3 Bathtooms</option>
+                                        <option value="4">4 Bathtooms</option>
+                                        <option value="5">5 Bathtooms</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="otherAmenities">
+                                <h3>Other amenities</h3>
+                                <ul class="radioList">
+                                    <li>
+                                        <input type="radio" name="other" id="pool" value="pool">
+                                        <label for="pool">Pool</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="other" id="bikes" value="bikes">
+                                        <label for="bikes">Bikes</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="other" id="tennisCourt" value="tennisCourt">
+                                        <label for="tennisCourt">Tennis courts</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="other" id="kidsToys" value="kidsToys">
+                                        <label for="kidsToys">Kids Toys</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="other" id="walkinTrail" value="walkinTrail">
+                                        <label for="walkinTrail">Walking trails</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="other" id="petFriendly" value="petFriendly">
+                                        <label for="petFriendly">Pet friendly</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="other" id="hiking" value="hiking">
+                                        <label for="hiking">Hiking</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </fieldset>
+                </div>
+                <input type="submit" id="submit" class="button" value="Sing me up!">
+            </form>
+        </section>
+
+        
+    </main>
+    <footer><p>Copyright 2020, all rights reserved</p></footer>
+</body>
+</html>

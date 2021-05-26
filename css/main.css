@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.mainHeader {
+    background-color: #98d7cb;
+    padding: 2em 2em 1em;
+    text-align: center;
+    border-bottom: solid 15px #379f9f;
+}
+
+.mainHeader h1 {
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: .2em;
+    font-size: 3em;
+}
+
+.mainHeader p {
+    font-style: italic;
+    font-size: 1.2em;
+    color: gray;
+}
+
+.second {
+    text-align: center;
+    padding: 1.2em;
+    border-bottom: solid 3px #379f9f;
+}
+
+.second h2 {
+    color: gray;
+    padding-bottom: .2em;
+    font-size: 2.5em;
+}
+
+.second p {
+    color: gray;
+    padding: .5em .5em 2em;
+    
+}
+
+main h2 {
+    text-align: center;
+    color: gray;
+    font-size: 2.5em;
+}
+
+.listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 2em;
+    border-bottom: solid 3px #379f9f;
+}
+
+.listing div.item{
+    margin: 1em;
+    width: 150px;
+}
+
+div.item figcaption {
+    font-size: 1.2em;
+    color: gray;
+    font-weight: bold;
+}
+figcaption img {
+    width: 1.2em;
+}
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+a {
+    color: #379f9f;
+}
+
+/* form */
+.form {
+    padding: 1em;
+}
+
+.form h2 + p {
+    padding: 1em;
+}
+
+fieldset{
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    border: dashed 1px #379f9f;
+
+}
+
+legend {
+    font-size: 1.2em;
+    color: #379f9f;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+form ul {
+    list-style-type: none;
+}
+
+label {
+    display: block;
+    
+}
+
+input {
+    display: block;
+    height: 2em;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+textarea {
+    font-size: 1em;
+    min-width: 22.6em;
+    min-height: 6em;
+    
+}
+.basics ul{
+display: flex;
+}
+
+#basics input {
+    width: 22em;
+}
+
+.location ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.location ul li:first-child {
+    grid-column: 1 / 4;
+    
+}
+
+input#city, input#state, input#zip {
+    width: 7em;
+}
+
+ul.checkBox label, ul.checkBox input, ul.radioList label, ul.radioList input {
+    display: inline;
+    height: auto;
+}
+
+ul.checkBox label{
+    margin-right: 2em;
+}
+.checkBox, .radioList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:2em;
+    
+}
+
+select {
+    width: 15em;
+    height: 2em;
+    margin-bottom: 1em;
+}
+
+fieldset h2{    
+    color: #379f9f;
+    font-size: 1em;
+    border-bottom: solid 1px #379f9f;
+    margin-bottom: 1em;
+}
+fieldset h3 {
+    color: gray;
+    font-size:1em;
+    margin-bottom: .5em;
+}
+fieldset p{
+    margin-bottom: 1em;
+}
+
+input.button {
+    background-color: #379f9f;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: .25em .5em;
+    border-radius: 15px;
+    border: none;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    width: 14em;
+}
+
+fieldset p,fieldset h3,fieldset h2 {
+    text-align: left;
+}
+
+/* footer */
+
+footer {
+    background-color: #98d7cb;
+    text-align: center;
+    color: gray;
+    padding: 3em;
+    height: 7em;
+    
+}
+
+
+/* Mid-screen layout */
+@media screen and (min-width: 899px){
+    .second h2 {
+      text-align: left;
+    }
+
+    .margin{
+        margin-right: 2em;
+    }
+    .second img {
+        width: 400px;
+    }
+    #wrap {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .second p {
+        text-align: left;
+        max-width: 50%;
+
+    }
+    /* form */
+    .wrapRoomAmenities {
+        display: flex;
+    }
+    div.wrap {
+        display: flex;
+    }
+
+    div.wrap fieldset:first-child {
+        margin-right: 2.5em;
+
+    }
+    
+    .location ul {
+        display: flex;
+    }
+
+    .location input {
+        margin-right: 1em;
+    }
+
+    .checkBox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul.checkBox label{
+        margin-right: 4em;
+    }
+
+    main h2 {text-align: left;}
+   
+}
